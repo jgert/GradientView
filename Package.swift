@@ -3,22 +3,20 @@
 import PackageDescription
 
 let package = Package(
-    name: "GradientView",
+    name: "ZattooGradientView",
     platforms: [
         .iOS(.v11),
         .tvOS(.v11)
     ],
     products: [
         .library(
-            name: "GradientView",
-            targets: ["GradientView"]),
+            name: "ZattooGradientView",
+            targets: ["ZattooGradientView"]),
     ],
     targets: [
         .target(
-            name: "GradientView",
-            dependencies: []),
-        .testTarget(
-            name: "GradientViewTests",
-            dependencies: ["GradientView"]),
+            name: "ZattooGradientView",
+            dependencies: [],
+            path: "Sources/GradientView"),
     ]
 )
